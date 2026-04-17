@@ -23,30 +23,8 @@ jobs:
             emotion_react: 11.14.0
             emotion_styled: 11.14.0
             react_intl: 7.1.10
-          - name: react18-mui6-x7294-t8213-emotion1140-intl7114
-            react: 18.3.1
-            react_dom: 18.3.1
-            react_types: 18.3.1
-            react_dom_types: 18.3.1
-            mui_material: 6.5.0
-            mui_icons: 6.5.0
-            mui_x: 7.29.4
-            tanstack: 8.21.3
-            emotion_react: 11.14.0
-            emotion_styled: 11.14.0
-            react_intl: 7.1.14
-          - name: react18-mui7-x7236-t8212-emotion1140-intl7110
-            react: 18.3.1
-            react_dom: 18.3.1
-            react_types: 18.3.1
-            react_dom_types: 18.3.1
-            mui_material: 7.3.10
-            mui_icons: 7.3.10
-            mui_x: 7.23.6
-            tanstack: 8.21.2
-            emotion_react: 11.14.0
-            emotion_styled: 11.14.0
-            react_intl: 7.1.10
+          # REMOVED: Invalid combination (mui_x 7.29.4 with mui_material 6.5.0)
+          # REMOVED: Invalid combination (mui_x 7.23.6 with mui_material 7.3.10)
           - name: react18-mui7-x7294-t8213-emotion1141-intl7114
             react: 18.3.1
             react_dom: 18.3.1
@@ -71,30 +49,8 @@ jobs:
             emotion_react: 11.14.0
             emotion_styled: 11.14.0
             react_intl: 7.1.10
-          - name: react19-mui6-x7294-t8213-emotion1140-intl7114
-            react: 19.2.5
-            react_dom: 19.2.5
-            react_types: 19.2.2
-            react_dom_types: 19.2.2
-            mui_material: 6.5.0
-            mui_icons: 6.5.0
-            mui_x: 7.29.4
-            tanstack: 8.21.3
-            emotion_react: 11.14.0
-            emotion_styled: 11.14.0
-            react_intl: 7.1.14
-          - name: react19-mui7-x7236-t8212-emotion1140-intl7110
-            react: 19.2.5
-            react_dom: 19.2.5
-            react_types: 19.2.2
-            react_dom_types: 19.2.2
-            mui_material: 7.3.10
-            mui_icons: 7.3.10
-            mui_x: 7.23.6
-            tanstack: 8.21.2
-            emotion_react: 11.14.0
-            emotion_styled: 11.14.0
-            react_intl: 7.1.10
+          # REMOVED: Invalid combination (mui_x 7.29.4 with mui_material 6.5.0)
+          # REMOVED: Invalid combination (mui_x 7.23.6 with mui_material 7.3.10)
           - name: react19-mui7-x7294-t8213-emotion1141-intl7114
             react: 19.2.5
             react_dom: 19.2.5
