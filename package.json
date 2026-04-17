@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@coderic-labs/mui-tanstack-table": "file:../mui-tanstack-table/packages/mui-tanstack-table",
+    "@coderic-labs/mui-tanstack-table": "file:../mui-tanstack-table/packages/mui-tanstack-table/coderic-labs-mui-tanstack-table-0.0.6.tgz",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@faker-js/faker": "10.1.0",
