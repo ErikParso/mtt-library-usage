@@ -10,7 +10,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - name: react18-mui6
+          # React 18, MUI 6, various x-pickers, tanstack, intl, emotion
+          - name: react18-mui6-x7236-t8212-intl7110-emotion1140
             react: 18.3.1
             react_dom: 18.3.1
             react_types: 18.3.1
@@ -22,7 +23,20 @@ jobs:
             emotion_react: 11.14.0
             emotion_styled: 11.14.0
             react_intl: 7.1.10
-          - name: react18-mui7
+          - name: react18-mui6-x7240-t8213-intl7114-emotion1141
+            react: 18.3.1
+            react_dom: 18.3.1
+            react_types: 18.3.1
+            react_dom_types: 18.3.1
+            mui_material: 6.5.0
+            mui_icons: 6.5.0
+            mui_x: 7.24.0
+            tanstack: 8.21.3
+            emotion_react: 11.14.1
+            emotion_styled: 11.14.1
+            react_intl: 7.1.14
+          # React 18, MUI 7, various x-pickers, tanstack, intl, emotion
+          - name: react18-mui7-x7294-t8213-intl7114-emotion1141
             react: 18.3.1
             react_dom: 18.3.1
             react_types: 18.3.1
@@ -31,10 +45,23 @@ jobs:
             mui_icons: 7.3.10
             mui_x: 7.29.4
             tanstack: 8.21.3
-            emotion_react: 11.14.0
+            emotion_react: 11.14.1
             emotion_styled: 11.14.1
             react_intl: 7.1.14
-          - name: react19-mui6
+          - name: react18-mui7-x7280-t8212-intl7110-emotion1140
+            react: 18.3.1
+            react_dom: 18.3.1
+            react_types: 18.3.1
+            react_dom_types: 18.3.1
+            mui_material: 7.3.10
+            mui_icons: 7.3.10
+            mui_x: 7.28.0
+            tanstack: 8.21.2
+            emotion_react: 11.14.0
+            emotion_styled: 11.14.0
+            react_intl: 7.1.10
+          # React 19, MUI 6, various x-pickers, tanstack, intl, emotion
+          - name: react19-mui6-x7236-t8212-intl7110-emotion1140
             react: 19.2.5
             react_dom: 19.2.5
             react_types: 19.2.2
@@ -46,7 +73,20 @@ jobs:
             emotion_react: 11.14.0
             emotion_styled: 11.14.0
             react_intl: 7.1.10
-          - name: react19-mui7
+          - name: react19-mui6-x7240-t8213-intl7114-emotion1141
+            react: 19.2.5
+            react_dom: 19.2.5
+            react_types: 19.2.2
+            react_dom_types: 19.2.2
+            mui_material: 6.5.0
+            mui_icons: 6.5.0
+            mui_x: 7.24.0
+            tanstack: 8.21.3
+            emotion_react: 11.14.1
+            emotion_styled: 11.14.1
+            react_intl: 7.1.14
+          # React 19, MUI 7, various x-pickers, tanstack, intl, emotion
+          - name: react19-mui7-x7294-t8213-intl7114-emotion1141
             react: 19.2.5
             react_dom: 19.2.5
             react_types: 19.2.2
@@ -55,9 +95,21 @@ jobs:
             mui_icons: 7.3.10
             mui_x: 7.29.4
             tanstack: 8.21.3
-            emotion_react: 11.14.0
+            emotion_react: 11.14.1
             emotion_styled: 11.14.1
             react_intl: 7.1.14
+          - name: react19-mui7-x7280-t8212-intl7110-emotion1140
+            react: 19.2.5
+            react_dom: 19.2.5
+            react_types: 19.2.2
+            react_dom_types: 19.2.2
+            mui_material: 7.3.10
+            mui_icons: 7.3.10
+            mui_x: 7.28.0
+            tanstack: 8.21.2
+            emotion_react: 11.14.0
+            emotion_styled: 11.14.0
+            react_intl: 7.1.10
 
     name: ${{ matrix.name }}
 
