@@ -1,42 +1,41 @@
 {
-  "name": "mtt-library-usage",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@coderic-labs/mui-tanstack-table": "file:../mui-tanstack-table/packages/mui-tanstack-table/coderic-labs-mui-tanstack-table-0.0.7.tgz",
-    "@emotion/react": "11.14.0",
-    "@emotion/styled": "11.14.1",
-    "@faker-js/faker": "10.1.0",
-    "@mui/icons-material": "7.3.10",
-    "@mui/material": "7.3.10",
-    "@mui/x-date-pickers": "7.29.4",
-    "@tanstack/react-table": "8.21.3",
-    "dayjs": "^1.11.19",
-    "lodash": "4.17.21",
-    "react": "19.2.5",
-    "react-dom": "19.2.5",
-    "react-intl": "7.1.14"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.39.4",
-    "@types/lodash": "4.14.191",
-    "@types/node": "^24.12.2",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
-    "@vitejs/plugin-react": "^6.0.1",
-    "eslint": "^9.39.4",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.5.2",
-    "globals": "^17.4.0",
-    "typescript": "~5.9.3",
-    "typescript-eslint": "^8.58.0",
-    "vite": "^8.0.4"
-  }
+	"name": "mtt-library-usage",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "eslint .",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@emotion/react": "11.14.0",
+		"@emotion/styled": "11.14.1",
+		"@faker-js/faker": "10.1.0",
+		"@mui/icons-material": "7.3.10",
+		"@mui/material": "7.3.10",
+		"@mui/x-date-pickers": "7.29.4",
+		"@tanstack/react-table": "8.21.3",
+		"dayjs": "^1.11.19",
+		"lodash": "4.17.21",
+		"react": "19.2.5",
+		"react-dom": "19.2.5",
+		"react-intl": "7.1.14"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.39.4",
+		"@types/lodash": "4.14.191",
+		"@types/node": "^24.12.2",
+		"@types/react": "^19.2.2",
+		"@types/react-dom": "^19.2.2",
+		"@vitejs/plugin-react": "^6.0.1",
+		"eslint": "^9.39.4",
+		"eslint-plugin-react-hooks": "^7.0.1",
+		"eslint-plugin-react-refresh": "^0.5.2",
+		"globals": "^17.4.0",
+		"typescript": "~5.9.3",
+		"typescript-eslint": "^8.58.0",
+		"vite": "^8.0.4"
+	}
 }
