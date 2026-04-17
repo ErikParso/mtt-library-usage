@@ -10,7 +10,8 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - react: 18.3.1
+          - name: compat 1
+            react: 18.3.1
             react_dom: 18.3.1
             react_types: 18.3.1
             react_dom_types: 18.3.1
@@ -21,7 +22,8 @@ jobs:
             emotion_react: 11.14.0
             emotion_styled: 11.14.0
             react_intl: 7.1.10
-          - react: 18.3.1
+          - name: compat 2
+            react: 18.3.1
             react_dom: 18.3.1
             react_types: 18.3.1
             react_dom_types: 18.3.1
@@ -32,7 +34,8 @@ jobs:
             emotion_react: 11.13.5
             emotion_styled: 11.13.5
             react_intl: 7.1.10
-          - react: 18.3.1
+          - name: compat 3
+            react: 18.3.1
             react_dom: 18.3.1
             react_types: 18.3.1
             react_dom_types: 18.3.1
@@ -43,7 +46,8 @@ jobs:
             emotion_react: 11.14.0
             emotion_styled: 11.14.0
             react_intl: 7.1.14
-          - react: 19.2.5
+          - name: compat 4
+            react: 19.2.5
             react_dom: 19.2.5
             react_types: 19.2.2
             react_dom_types: 19.2.2
@@ -54,7 +58,8 @@ jobs:
             emotion_react: 11.14.0
             emotion_styled: 11.14.0
             react_intl: 7.1.10
-          - react: 19.2.5
+          - name: compat 5
+            react: 19.2.5
             react_dom: 19.2.5
             react_types: 19.2.2
             react_dom_types: 19.2.2
