@@ -1,0 +1,97 @@
+name: PeerDeps Matrix
+
+on:
+  workflow_dispatch:
+
+jobs:
+  peerdeps-compat:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: react18-mui6
+            react: 18.3.1
+            react_dom: 18.3.1
+            react_types: 18.3.1
+            react_dom_types: 18.3.1
+            mui_material: 6.5.0
+            mui_icons: 6.5.0
+            mui_x: 7.23.6
+            tanstack: 8.21.2
+            emotion_react: 11.14.0
+            emotion_styled: 11.14.0
+            react_intl: 7.1.10
+          - name: react18-mui7
+            react: 18.3.1
+            react_dom: 18.3.1
+            react_types: 18.3.1
+            react_dom_types: 18.3.1
+            mui_material: 7.3.10
+            mui_icons: 7.3.10
+            mui_x: 7.29.4
+            tanstack: 8.21.3
+            emotion_react: 11.14.0
+            emotion_styled: 11.14.1
+            react_intl: 7.1.14
+          - name: react19-mui6
+            react: 19.2.5
+            react_dom: 19.2.5
+            react_types: 19.2.2
+            react_dom_types: 19.2.2
+            mui_material: 6.5.0
+            mui_icons: 6.5.0
+            mui_x: 7.23.6
+            tanstack: 8.21.2
+            emotion_react: 11.14.0
+            emotion_styled: 11.14.0
+            react_intl: 7.1.10
+          - name: react19-mui7
+            react: 19.2.5
+            react_dom: 19.2.5
+            react_types: 19.2.2
+            react_dom_types: 19.2.2
+            mui_material: 7.3.10
+            mui_icons: 7.3.10
+            mui_x: 7.29.4
+            tanstack: 8.21.3
+            emotion_react: 11.14.0
+            emotion_styled: 11.14.1
+            react_intl: 7.1.14
+
+    name: ${{ matrix.name }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install base dependencies
+        run: npm ci
+
+      - name: Install matrix peer dependency set
+        run: >-
+          npm install --save-exact --no-save
+          @coderic-labs/mui-tanstack-table@0.0.7
+          react@${{ matrix.react }}
+          react-dom@${{ matrix.react_dom }}
+          @types/react@${{ matrix.react_types }}
+          @types/react-dom@${{ matrix.react_dom_types }}
+          @mui/material@${{ matrix.mui_material }}
+          @mui/icons-material@${{ matrix.mui_icons }}
+          @mui/x-date-pickers@${{ matrix.mui_x }}
+          @tanstack/react-table@${{ matrix.tanstack }}
+          @emotion/react@${{ matrix.emotion_react }}
+          @emotion/styled@${{ matrix.emotion_styled }}
+          react-intl@${{ matrix.react_intl }}
+
+      - name: TypeScript compile
+        run: npx tsc -b
+
+      - name: Build
+        run: npm run build
