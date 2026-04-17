@@ -7,8 +7,9 @@
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
-		"test": "",
-		"test:watch": "",
+		"test": "playwright test",
+		"test:headed": "playwright test --headed",
+		"test:debug": "playwright test --debug",
 		"preview": "vite preview"
 	},
 	"dependencies": {
