@@ -13,7 +13,7 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@coderic-labs/mui-tanstack-table": "0.0.7",
+		"@coderic-labs/mui-tanstack-table": "0.0.8",
 		"@emotion/react": "11.14.0",
 		"@emotion/styled": "11.14.1",
 		"@faker-js/faker": "10.1.0",
